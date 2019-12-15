@@ -12,6 +12,16 @@ WriteMakefile(
 		IO::Socket::SSL		=> 0,
 		Digest::MD5		=> 0,
 	},
+    META_MERGE => {
+	'meta-spec' => { version => 2 },
+		resources => {
+			repository => {
+			type => 'git',
+			url => 'https://github.com/juliensobrier/WebService-Thumbalizr.git',
+			web => 'https://github.com/juliensobrier/WebService-Thumbalizr',
+		},
+	},
+    },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WebService/Thumbalizr.pm', # retrieve abstract from module
        AUTHOR         => 'Julien Sobrier <jsobrier@thumbalizr.com>') : ()),
