@@ -17,7 +17,7 @@ IO::Socket::SSL::set_ctx_defaults(
      verify_mode => 0,
 );
 
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 
 =head1 NAME
 
@@ -41,8 +41,6 @@ The source code is available on github at L<https://github.com/juliensobrier/thu
 
 
 =head1 METHODS
-
-=over 4
 
 =head2 new()
 
@@ -144,7 +142,7 @@ sub url {
 
 Download a screenshot. Optionally, you can save the image directly to a file.
 
-Return the status of the screenshot (OK, FAILED or QUEUED), and the image data or image file name. In case the screenshto is not finished, the image data will be empty.
+Return the status of the screenshot (OK, FAILED or QUEUED), and the image data or image file name. In case the screenshot is not finished, the image data will be empty.
 
 Arguments:
 
@@ -275,8 +273,6 @@ sub error {
 
 1;
 __END__
-
-=back
 
 =back
 

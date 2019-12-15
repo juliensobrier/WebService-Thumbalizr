@@ -4,3 +4,5 @@ Revision history for Perl extension WebService::Thumbalizr.
 	- original version; created by h2xs 1.23 with options
 		-AX WebService::Thumbalizr
 
+1.0.1  Sat Dec  14 21:05:40 2019
+	- fix typos in the documentation
